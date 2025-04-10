@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.text-gray-600 {
+  color: #718096;
+}
+
+.text-gray-800 {
+  color: #2d3748;
+}
+
+.text-blue-600 {
+  color: #3182ce;
+}
+
+.text-pink-600 {
+  color: #d53f8c;
+}
+
+.bg-gradient {
+  background: linear-gradient(to bottom right, #edf2f7, #ffffff);
+}
+
+.rounded-xl {
+  border-radius: 1rem;
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.hover\:shadow-lg:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+/* Buttons */
+.button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-pink {
+  background-color: #d53f8c;
+  color: #ffffff;
+}
+
+.button-pink:hover {
+  background-color: #b83280;
+}
+
+.button-blue {
+  background-color: #3182ce;
+  color: #ffffff;
+}
+
+.button-blue:hover {
+  background-color: #2b6cb0;
+}
+
+/* Cards */
+.card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #3182ce;
+}
+
+.card-title:hover {
+  text-decoration: underline;
+  color: #2b6cb0;
+}
+
+.card-text {
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+.card-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+/* Wishlist */
+.wishlist-header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d53f8c;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.wishlist-empty {
+  text-align: center;
+  color: #718096;
+  font-size: 1rem;
+}
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
