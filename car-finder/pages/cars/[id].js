@@ -118,7 +118,7 @@ export default function CarDetail() {
                         <div className="md:w-1/2 p-8">
                             <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">{car.name}</h1>
                             <div className="flex items-center space-x-2 mb-6">
-                                <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">${car.price.toLocaleString()}</span>
+                                <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">${car.price.toLocaleString('en-US')}</span>
                             </div>
 
                             <div className="mb-8">

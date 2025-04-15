@@ -97,7 +97,7 @@ export default function CarCard({ car }) {
                     </h2>
                 </Link>
                 <p className="text-sm text-gray-500 dark:text-gray-400">{car.brand}</p>
-                <p className="text-xl font-semibold text-gray-800 dark:text-gray-200">${car.price.toLocaleString()}</p>
+                <p className="text-xl font-semibold text-gray-800 dark:text-gray-200">${car.price.toLocaleString('en-US')}</p>
                 <div className="mt-2 flex items-center text-sm text-gray-500 dark:text-gray-400">
                     <span>{car.fuel}</span>
                     <span className="mx-2">•</span>

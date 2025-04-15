@@ -154,7 +154,7 @@ export default function Home() {
                 className="w-full"
               />
               <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                Up to ${priceRange[1].toLocaleString()}
+                Up to ${priceRange[1].toLocaleString('en-US')}
               </div>
             </div>
           </div>
